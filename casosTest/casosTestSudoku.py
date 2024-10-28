@@ -29,13 +29,13 @@ incorrect4 = [['a', 'b', 'c'],
 incorrect5 = [[1, 1.5],
               [1.5, 1]]
 
-irregular = [[1, 2, 3],
+incorrecto_ = [[1, 2, 3],
              [2, 3, 1]]
 
-irregular2 = [[1, 2, 3],
+incorrecto_longitud_fila = [[1, 2, 3],
               [2, 3, 1],
               [3, 1]]
-nuevo = [[]]
+incorrecto_vacio = [[]]
 
 # Para evitar importar una variable al usar:
 # from modulo import *

@@ -1,13 +1,7 @@
-
-
-
+from src.check_vacio import check_vacio
+from src.check_es_cuadrado import check_es_cuadrado
 def check_sudoku(sudoku):
     
     assert isinstance(sudoku, list)
     
-    sudoku_vacio = [[]]
-    if sudoku == sudoku_vacio:
-        return False
-        
-    
-    return True
+    return check_vacio(sudoku) and check_es_cuadrado(sudoku)

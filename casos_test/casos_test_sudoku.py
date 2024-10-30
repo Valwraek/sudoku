@@ -26,8 +26,12 @@ caracteres = [['a', 'b', 'c'],
               ['b', 'c', 'a'],
               ['c', 'a', 'b']]
 
-numeros_reales =    [[1, 1.5],
+numeros_decimales =    [[1, 1.5],
                     [1.5, 1]]
+                    
+numeros_negativos = [[1, 2, 3],
+                     [2, -3, 1],
+                     [3, 1, -2]]
 
 irregular_fila =    [[1, 2, 3],
                     [2, 3, 1]]

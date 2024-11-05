@@ -2,17 +2,30 @@
 from decimal import Decimal
 def check_es_real(sudoku):
     
-    for fila_indice in range(len(sudoku)):
-        for columna_indice in range(len(sudoku[fila_indice])):
-            
-            numero = sudoku[fila_indice][columna_indice]           
-            if isinstance(numero, int) is False:
-                return False
-            if Decimal(numero).is_signed():
-                print(numero)
-                return False  
+    assert isinstance(sudoku, list)
+    
+    for fila_indice in sudoku:
+        for columna_indice in fila_indice:
+                       
+            if es_digito(columna_indice) is False or es_negativo(columna_indice):
+                
+                return False                                
     return True
 
+def es_digito(numero):
+    
+    if isinstance(numero, int) is True:
+        
+        return True
+    return False
+
+def es_negativo(numero):
+    
+    if Decimal(numero).is_signed():
+        
+        return True
+    return False
+            
 
 
 if __name__ == '__main__':

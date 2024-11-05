@@ -2,14 +2,13 @@ def check_es_cuadrado(sudoku):
     
     assert isinstance(sudoku, list)
 
-    lon_columna = len(sudoku)
-    for fila in range(lon_columna):
-        if len(sudoku[fila]) != lon_columna:
+    lon_fila_sudoku = len(sudoku)
+    for fila in sudoku:
+        if len(fila) != lon_fila_sudoku:
             return False
     
     return True
         
-
 
 if __name__ == '__main__':
     
